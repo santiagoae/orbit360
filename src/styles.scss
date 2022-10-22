@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;    
+}
+
+@font-face {
+    font-family:"Nova";
+    src: url(./assets/fonts/nova.otf);    
+}
+@font-face {
+    font-family:"Nova-Black";
+    src: url(./assets/fonts/ProximaNovaAltBlack.otf);    
+}
+@font-face {
+    font-family:"Nova-Blackit";
+    src: url(./assets/fonts/ProximaNovaAltBlackIt.otf);    
+}
+
+

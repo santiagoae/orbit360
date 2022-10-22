@@ -1,0 +1,58 @@
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Nova-Blackit;
+  color: white;
+  font-size: 20px;
+  padding: 50px;
+  
+  
+}
+
+.arrows{
+  position: absolute;
+  z-index: 2;
+  left: 46%;
+  font-size: 40px;      
+  bottom: 0;
+  animation:bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: #FDEB07;
+}
+
+.textoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+}
+
+.textoContainer a{  
+  color: white;
+}
+
+p{
+  margin: 0;
+}
+
+.videoContainer .logo{  
+  align-items: flex-start;
+}
+
+.logo{
+  background-image:url("../../../assets/Logo.png");
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50%;
+  height: 20vh;
+  animation: rotateIn; 
+  animation-duration: 10s;
+  // animation-iteration-count: infinite;
+  // animation-direction:alternate-reverse; 
+  
+}
