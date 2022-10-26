@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LobbyComponent } from './components/lobby/lobby.component';
 
 const routes: Routes = [
-  {path: "/", component:LobbyComponent}
+  {path: "lobby", component:LobbyComponent}
 ];
 
 @NgModule({
