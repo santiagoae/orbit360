@@ -1,0 +1,19 @@
+.contenedorFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+}
+.contenedorFooter small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+img{
+    width: 12%;
+    margin-right: 6px;
+}

@@ -4,7 +4,8 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height:100vh;    
+    min-height: auto;
+    overflow-x: auto ;    
 }
 
 #lobby.contenedor{
@@ -17,8 +18,14 @@
 }
 #planes.contenedor{   
     //display: none;
+    //background-image: url("https://media.giphy.com/media/oB6KlAvOuaLtxYy8l4/giphy.gif");
+    // background-image: url("https://media.giphy.com/media/DS89v1NqpzCqA/giphy.gif");
+    //background-image: url("https://media.giphy.com/media/3og0IS6SldW60DdCRa/giphy.gif");
+    background-image: url("https://media.giphy.com/media/c3OZsDoaz7kD6/giphy.gif");
 }
 
 #dondeLlegamos.contenedor{
     background-image: url("../assets/mapa/mapa-01.png");
 }
+
+
