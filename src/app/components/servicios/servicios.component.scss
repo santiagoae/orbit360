@@ -10,8 +10,10 @@
     font-size: 20px;
     padding: 50px;
     text-align: justify;
-      
+    position: relative;
+    color: white;  
 }
+
 
 .serviciosContainer p{    
     font-family: Nova;
@@ -21,4 +23,74 @@
 .serviciosContainer h1{    
     text-align: center; 
        
+}
+
+.contenedorPlataforma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.contenedorPlataforma img{ 
+    width: 100%;
+    z-index: 1;
+}
+
+.infoPlataforma1{
+    width: 100%;
+    height: 10%;
+    background-image: url(../../../assets/plataforma/banners1.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: absolute;    
+    left:0;
+    top: 26%;
+}
+.infoPlataforma2{
+    width: 100%;
+    height: 10%;
+    background-image: url(../../../assets/plataforma/banners2.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: absolute;    
+    left:0;
+    top: 46%;
+}
+.infoPlataforma3{
+    width: 100%;
+    height: 10%;
+    background-image: url(../../../assets/plataforma/banners1.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: absolute;    
+    left:0;
+    top: 66%;
+}
+
+.contenedorPlataforma2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.contenedorPlataforma2 img{ 
+    width: 100%;
+    z-index: 1;
+}
+
+.contenedorPlataforma3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.contenedorPlataforma3 img{ 
+    width: 100%;
+    z-index: 1;
 }
