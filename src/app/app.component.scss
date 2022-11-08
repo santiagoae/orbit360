@@ -1,34 +1,61 @@
-.contenedor{   
-    display: flex;
-    flex-direction: column;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: auto;
-    overflow-x: auto ;    
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: auto;
+  overflow-x: auto;
 }
 
-#lobby.contenedor{
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://media.giphy.com/media/3ohhwemvrCwMczeqKQ/giphy.gif");
+#lobby.contenedor {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://media.giphy.com/media/3ohhwemvrCwMczeqKQ/giphy.gif");
 }
 
-#servicios.contenedor{
-    //background-image: url("https://media.giphy.com/media/3o6UBbYR3t0coIdKRq/giphy.gif");
-    background-image: url("../assets/plataforma/fondo3-01.jpg");
-    //background-image: url("https://media.giphy.com/media/XF3hIaY4dFNEknIxwE/giphy-downsized-large.gif");
+#servicios.contenedor {
+  //background-image: url("https://media.giphy.com/media/3o6UBbYR3t0coIdKRq/giphy.gif");
+  background-image: url("../assets/plataforma/fondo3-01.jpg");
+  //background-image: url("https://media.giphy.com/media/XF3hIaY4dFNEknIxwE/giphy-downsized-large.gif");
 }
-#planes.contenedor{   
-    //display: none;
-    //background-image: url("https://media.giphy.com/media/oB6KlAvOuaLtxYy8l4/giphy.gif");
-    //background-image: url("https://media.giphy.com/media/DS89v1NqpzCqA/giphy.gif");
-    //background-image: url("https://media.giphy.com/media/3og0IS6SldW60DdCRa/giphy.gif");
-    //background-image: url("https://media.giphy.com/media/c3OZsDoaz7kD6/giphy.gif");
-    background-image: url("../assets/planes/fondook-01.jpg");
-    
-}
-
-#dondeLlegamos.contenedor{
-    background-image: url("../assets/mapa/mapa-01.png");    
+#planes.contenedor {
+  //display: none;
+  //background-image: url("https://media.giphy.com/media/oB6KlAvOuaLtxYy8l4/giphy.gif");
+  //background-image: url("https://media.giphy.com/media/DS89v1NqpzCqA/giphy.gif");
+  //background-image: url("https://media.giphy.com/media/3og0IS6SldW60DdCRa/giphy.gif");
+  //background-image: url("https://media.giphy.com/media/c3OZsDoaz7kD6/giphy.gif");
+  background-image: url("../assets/planes/fondook-01.jpg");
 }
 
+#dondeLlegamos.contenedor {
+  background-image: url("../assets/mapa/mapa-01.png");
+}
 
+#wpp img {
+  position: fixed;
+  width: 15%;
+  margin-left: 20px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+@media (min-width: 520px) {
+  #wpp img {
+    width: 12%;
+  }
+}
+@media (min-width: 800px) {
+  #wpp img {
+    width: 8%;
+  }
+}
+@media (min-width: 992px) {
+  #wpp img {
+    width: 5%;
+  }
+}
