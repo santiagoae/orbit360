@@ -12,7 +12,21 @@
     text-align: justify;
     position: relative;
     color: white;  
-}
+}.serviciosContainer a{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px; 
+}.boton{
+    color: white;
+    text-shadow: 1px 0.1px 1px black;
+    //background-color: #fdeb07;
+    background-color: #E7FF00;
+    -webkit-text-stroke: 0.6px black;
+    font-size: 20px;
+    animation: headShake;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+  }
 
 .serviciosContainer p{    
     font-family: Nova;
