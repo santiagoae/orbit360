@@ -11,10 +11,42 @@
     font-family: Nova-Black;    
 }
 
+.tamImg{
+    margin: 0 auto;
+    width: 70% ;   
+}
+
 .contenedorEquipo small{    
     font-family: Nova;    
 }
 
 .contenedorEquipo h1{ 
     font-size: 34px;    
+}
+
+@media (min-width: 768px) {
+    .tamImg {
+        margin: 0 auto;
+        width: 40% ;   
+    }
+
+    .contenedorEquipo small{    
+        font-size: 16px;   
+    }
+
+    
+}
+  
+@media (min-width: 1024px) {
+    .contenedorEquipo {    
+       padding: 40px;  
+    }
+
+    .contenedorEquipo small{    
+        font-size: 18px;   
+    }
+}
+  
+  @media (min-width: 1200px) {
+    
 }

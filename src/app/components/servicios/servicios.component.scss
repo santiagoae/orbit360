@@ -20,7 +20,7 @@
     color: white;
     text-shadow: 1px 0.1px 1px black;
     //background-color: #fdeb07;
-    background-color: #E7FF00;
+    background-color: #FDEB07;
     -webkit-text-stroke: 0.6px black;
     font-size: 20px;
     animation: headShake;
@@ -70,15 +70,101 @@
     color: #FDEB07 ;
     margin-right: 10px;
 }.imgPowerBank{
-    width: 30%;
-    margin: 40px 0 40px 0;
-    animation:heartBeat;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}.imgBrazo{
     width: 50%;
-    margin: 40px 0 40px 0;
-    animation:heartBeat;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    margin: 0 auto;
+    // animation:heartBeat;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
+}.imgBrazo{
+    width: 65%;
+    margin: 0 auto;
+    // animation:heartBeat;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
 }
+
+.carousel{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) { 
+    .imgPlataforma{
+        width: 70%;
+    }
+
+    .carousel{
+        min-height: 50vh;
+    }
+
+    .imgPowerBank{
+        width: 30%;
+        margin: 0 auto;
+        // animation:heartBeat;
+        // animation-duration: 2s;
+        // animation-iteration-count: infinite;
+    }
+
+    .imgBrazo{
+        width: 45%;
+        margin: 0 auto;
+        // animation:heartBeat;
+        // animation-duration: 2s;
+        // animation-iteration-count: infinite;
+    }
+}
+
+@media (min-width: 1024px) { 
+
+    .serviciosContainer{
+        padding: 80px; 
+    }
+
+    .imgPlataforma{
+        width: 60%;
+    }
+
+    .carousel{
+        min-height: 70vh;
+    }
+
+    .imgPowerBank{
+        width: 20%;
+    }
+
+    .imgBrazo{
+        width: 35%;
+    }
+
+    .serviciosContainer a{
+        width: 60%;
+    }
+
+    .imgLogo{
+        width: 40%;
+       
+    }
+
+    .descripcionPlataforma p{
+        
+        font-size: 45px;
+        
+    }
+ }
+
+@media (min-width: 1200px) {
+    .descripcionPlataforma{
+        flex-direction: row;
+    }
+
+    .imgPlataforma{
+        width: 50%;
+    }
+
+    .imgLogo{
+        width: 24%;
+       
+    }
+ }

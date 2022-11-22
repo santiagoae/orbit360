@@ -17,3 +17,17 @@ img{
     width: 12%;
     margin-right: 6px;
 }
+
+@media (min-width: 768px) { 
+    img{
+        width: 6%;
+    }
+}
+
+@media (min-width: 1024px) {
+    img{
+        width: 4%;
+    }
+ }
+
+@media (min-width: 1200px) { }
