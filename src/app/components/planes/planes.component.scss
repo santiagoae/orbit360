@@ -19,6 +19,11 @@
   //padding: 20px;
   font-family: Nova-Black;
   font-size: 20px;    
+}.contenedorPlanes h1{
+     color: white;
+     font-size: 25px;
+     text-align: center;
+     margin-top: 20px;
 }
 .contenedorPlanes img{
   width: 70%;   
@@ -57,7 +62,7 @@ ul {
 
   .carousel{
     text-align: center;
-    min-height: 105vh;
+    min-height: 70vh;
   }
 
   .contenedorPlanes img{
@@ -68,12 +73,17 @@ ul {
     margin-left: 0%;
     margin-bottom: 20px; 
   }
+
+  .contenedorPlanes h1{
+    font-size: 28px;
+  }
+
  }
 
 @media (min-width: 1024px) { 
   .carousel{
     text-align: center;
-    min-height: 105vh;
+    min-height:  80vh;
   }
 
   .contenedorPlanes img{
@@ -83,6 +93,10 @@ ul {
   .carousel-item  a{
     margin-left: 0%;
     margin-bottom: 20px; 
+  }
+
+  .contenedorPlanes h1{
+    font-size: 35px;
   }
 }
 
