@@ -10,6 +10,7 @@ import { TestimoniosComponent } from './components/testimonios/testimonios.compo
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PlanesComponent } from './components/planes/planes.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PlanesComponent } from './components/planes/planes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
