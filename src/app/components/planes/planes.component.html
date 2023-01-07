@@ -1,103 +1,3 @@
-<!-- <div class="contenedorPlanes"> -->
-  <!-- <h1>
-    <i class="fa-solid fa-circle-check"></i> ADQUIERE EL PLAN QUE MEJOR SE
-    ADAPTE A TU NECESIDAD
-  </h1> -->
-  <!-- <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active prueba">
-        <img src="../../../assets/planes/1-02.png" class="d-block" alt="basic">
-        
-          <ul >
-            <li>
-              <i class="fa-solid fa-video"></i> Videos ilimitados
-            </li>
-            <li>
-              <i class="fa-solid fa-bezier-curve"></i> Diseño marco personalizado
-            </li>
-            <li>
-              <i class="fa-solid fa-lightbulb"></i> 2 luces led
-            </li>
-            <li>
-              <i class="fa-solid fa-person"></i> 1 Operario
-            </li>
-            <li>
-              <i class="fa-solid fa-envelopes-bulk"></i> Descarga por QR e E-mail
-            </li>
-          </ul>
-          <a href="https://wa.link/7luy06" target="_blank" class="btn btn-dark"
-          >Lo quiero!</a
-        >
-        
-      </div>
-      <div class="carousel-item">
-        <img src="../../../assets/planes/1-01.png" class="d-block" alt="top">
-        <ul >
-          <li >
-            <i class="fa-solid fa-video"></i> Videos ilimitados
-          </li>
-          <li >
-            <i class="fa-solid fa-bezier-curve"></i> Diseño marco personalizado
-          </li>
-          <li >
-            <i class="fa-solid fa-lightbulb"></i> 4 luces led
-          </li>
-          <li >
-            <i class="fa-solid fa-person"></i> 2 Operarios
-          </li>
-          <li >
-            <i class="fa-solid fa-envelopes-bulk"></i> Descarga por QR e E-mail
-          </li>
-          <li >
-            <i class="fa-solid fa-hard-drive"></i> Máquina burbujas y humo
-          </li>
-          <li >
-            <i class="fa-solid fa-money-bill-wheat"></i> Money gun
-          </li>
-        </ul>
-        <a href="https://wa.link/lvt7oq" target="_blank" class="btn boton"
-        >Lo quiero!</a
-      > 
-      </div>
-      <div class="carousel-item">
-        <img src="../../../assets/planes/1-03.png" class="d-block" alt="brands">
-        <ul >
-          <li >
-            <i class="fa-solid fa-caret-up"></i> Plan top +
-          </li>
-          <li >
-            <i class="fa-solid fa-file-video"></i> Video opening
-          </li>
-          <li >
-            <i class="fa-solid fa-photo-film"></i> Video ending
-          </li>
-          <li >
-            <i class="fa-solid fa-clapperboard"></i> Marco video
-          </li>
-          <li >
-            <i class="fa-solid fa-comment-dots"></i> animado
-          </li>
-        </ul>
-        <a href="https://wa.link/en2laf" target="_blank" class="btn btn-dark"
-        >Lo quiero!</a
-      >
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-<!-- </div> -->
 <div class="fondo">
   <h1>
     <i class="fa-solid fa-circle-check"></i> ADQUIERE EL PLAN QUE MEJOR SE
@@ -109,23 +9,22 @@
     [config]="slideConfig"
   >
     <div ngxSlickItem *ngFor="let slide of slides">
-      <!-- <img width="99%" [src]="slide?.img" alt="img" />
-    <h5 class="titulos">{{slide?.description}}</h5>
-    <p class="parrafos">{{slide?.especiality}}</p>
-    <button class="btn btn-success">Conocer</button> -->
       <div class="card d-block CardsContenedor">
-        <!-- <img [src]="slide?.img" class="card-img-top" alt="img" /> -->
-        <div class="card-body" style="text-align: start;">
+        <div class="card-body" style="text-align: start">
           <h5 class="card-title" style="text-align: center">
-            {{slide.title}}
+            {{ slide.title }}
           </h5>
           <ul>
             <li *ngFor="let services of slide.description">
-              <i class="{{services.icon}}"></i> {{services.item}}
+              <i class="{{ services.icon }}"></i> {{ services.item }}
             </li>
           </ul>
         </div>
-        <a class="btn btn-success mb-3" href="{{ slide?.linkButton }}" target="_blank">Lo quiero!</a
+        <a
+          class="btn btn-dark mb-3"
+          href="{{ slide?.linkButton }}"
+          target="_blank"
+          >Lo quiero!</a
         >
       </div>
     </div>
@@ -133,4 +32,54 @@
   <span><i class="fa-solid fa-circle-left" (click)="prevImg()"></i></span>
   <span><i class="fa-solid fa-circle-right" (click)="nextImg()"></i></span>
 </div>
-
+<!-- //////////////////////////////////////////////////// segunda vista -->
+<div class="contenedorPlanes">
+  <div class="itemPlanes">
+    <h1>PLAN BASIC</h1>
+    <ul>
+      <li><i class="fa-solid fa-video"></i> Videos ilimitados</li>
+      <li><i class="fa-solid fa-bezier-curve"></i> Diseño marco personalizado</li>
+      <li><i class="fa-solid fa-lightbulb"></i> 2 luces led</li>
+      <li><i class="fa-solid fa-person"></i> 1 Operario</li>
+      <li>
+        <i class="fa-solid fa-envelopes-bulk"></i> Descarga por QR e E-mail
+      </li>
+    </ul>
+    <a href="https://wa.link/7luy06" target="_blank" class="btn btn-dark"
+      >Lo quiero!</a
+    >
+  </div>
+  <div class="itemPlanes">
+    <div class="masVendido">Más vendido <i class="fa-solid fa-cart-plus"></i></div>
+    <h1>PLAN TOP <i class="fa-solid fa-bookmark"></i></h1>
+    <ul>
+      <li><i class="fa-solid fa-video"></i> Videos ilimitados</li>
+      <li>
+        <i class="fa-solid fa-bezier-curve"></i> Diseño marco personalizado
+      </li>
+      <li><i class="fa-solid fa-lightbulb"></i> 4 luces led</li>
+      <li><i class="fa-solid fa-person"></i> 2 Operarios</li>
+      <li>
+        <i class="fa-solid fa-envelopes-bulk"></i> Descarga por QR e E-mail
+      </li>
+      <li><i class="fa-solid fa-hard-drive"></i> Máquina burbujas y humo</li>
+      <li><i class="fa-solid fa-money-bill-wheat"></i> Money gun</li>
+    </ul>
+    <a href="https://wa.link/lvt7oq" target="_blank" class="btn btn-dark" id="top"
+      >Lo quiero!</a
+    >
+  </div>
+  <div class="itemPlanes">
+    <h1>PLAN BRANDS</h1>
+    <ul>
+      <li><i class="fa-solid fa-caret-up"></i> Plan top <b>+</b></li>
+      <li><i class="fa-solid fa-file-video"></i> Video opening</li>
+      <li><i class="fa-solid fa-photo-film"></i> Video ending</li>
+      <li><i class="fa-solid fa-clapperboard"></i> Marco video</li>
+      <li><i class="fa-solid fa-comment-dots"></i> animado</li>
+    </ul>
+    <a href="https://wa.link/en2laf" target="_blank" class="btn btn-dark"
+      >Lo quiero!</a
+    >
+  </div>
+</div>

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
+// color verde #E7FF00
+// color amarillo #FDEB07;
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +13,11 @@ a{
 
 :root {
     scroll-behavior: smooth;
+    --fuente: Nova;
+    --fuenteBlack: Nova-Black;
+    --fuenteBlackit: Nova-Blackit;
+    --colorVerde: #E7FF00;
+    --colorAmarillo: #FDEB07;
 }
 
 
